@@ -1,14 +1,9 @@
 package com.ar.demo.models;
 
-import java.sql.Date;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import java.util.Date;
+import jakarta.persistence.*;
 
-@Entity
+@Entity // telling JPA that the instance of this class are mapped to rows of the corresponding database table  
 @Table(name = "products")
 public class Product {
 	@Id  //set the primary key
@@ -70,9 +65,8 @@ public class Product {
 	public String getImg_file_name() {
 		return img_file_name;
 	}
-	public void setImg_file_name(String imgFileName) {
-		this.img_file_name = imgFileName;
+	public void setImg_file_name(String img_file_name) {
+		this.img_file_name = img_file_name;
 	}
-	
 }
 

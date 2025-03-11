@@ -12,12 +12,12 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="text-center my-5">Products</h1>
+		<h1 class="text-center my-4">Products</h1>
 
 		<a class="btn btn-secondary" href="/products/create">Create
 			Products</a>
 
-		<table classes="table">
+		<table class="table">
 			<thead>
 				<tr>
 					<th>ID</th>
@@ -43,7 +43,8 @@
 						alt="..." width="100">
 					</td>
 					<td th:text="${product.createdAt.toString().substring(0,10)}"></td>
-					<td style="white-space: nowrap"><a
+					<td style="white-space: nowrap">
+					<a
 						class="btn btn-primary btn-sm"
 						th:href="@{/products/edit(id=${product.id})}">Edit</a> <a
 						class="btn btn-primary btn-sm"
