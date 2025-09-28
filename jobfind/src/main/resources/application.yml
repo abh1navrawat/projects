@@ -23,6 +23,7 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
+    #had to remove email and password while uploading for safety concerns
     username: your-email@gmail.com
     password: your-app-password
     properties:
@@ -40,6 +41,7 @@ server:
 # Cloudinary Config
 # ====================================
 cloudinary:
+#removed api key and secret for safety concerns
   cloud-name: dr3rkjnkx
   api_key: YOUR_API_KEY
   api-secret: YOUR_API_SECRET
